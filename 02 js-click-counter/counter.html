@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript Click Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>click counter</h1>
+    <div class="buttons">
+      <button id="button">click</button>
+      <button id="reset">reset</button>
+    </div>
+    <p id="counter">-</p>
+  </div>
+
+  <script type="text/javascript">
+    let button = document.getElementById('button');
+    let counter = document.getElementById('counter');
+    let reset = document.getElementById('reset');
+    let count = 0;
+    button.onclick = function() {
+      count++;
+      counter.innerHTML = `button was clicked ${count} times`;
+    }
+    reset.onclick = function() {
+      resetCounter();
+    }
+
+    function resetCounter() {
+      count = 0;
+      counter.innerHTML = `back to zero!`
+    }
+
+  </script>
+</body>
