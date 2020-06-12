@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.color {
+  text-transform: uppercase;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  outline: 0;
+  border: 1px solid black;
+  background: white;
+  transition: all 0.4s ease;
+  margin-right: 7px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8em;
+}
