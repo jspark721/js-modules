@@ -1,25 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 body {
   font-family: "Lato", sans-serif;
+  transition: all 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.title {
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 8px;
+  border-radius: 5px;
+}
 .color {
   text-transform: uppercase;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  margin-left: 5px;
 }
 
 button {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: 0;
   border: 1px solid black;
   background: white;
   transition: all 0.4s ease;
   margin-right: 7px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 0.8em;
+  letter-spacing: 2px;
+  font-size: 0.7em;
+  margin-top: 10px;
 }

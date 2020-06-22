@@ -15,13 +15,14 @@ const color = document.querySelector(".color");
 // }
 
 btn.addEventListener("click", function () {
-  let hexColor = "#";
+  let hexColor = " #";
   for (let i = 0; i < 6; i++) {
     hexColor += hex[getRandomNumber()];
   }
 
   document.body.style.backgroundColor = hexColor;
   color.textContent = hexColor;
+  color.style.color = hexColor;
 });
 
 function getRandomNumber() {
