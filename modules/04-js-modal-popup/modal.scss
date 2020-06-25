@@ -1,0 +1,142 @@
+$black: #252421;
+$white: #f9f9f9;
+$light: #d1d2ce;
+$pink: #f2d3c6;
+$green: #799875;
+
+@import url("https://fonts.googleapis.com/css?family=Kanit:400,800|Lato:300,400&display=swap");
+
+$serif: "Kanit", sans-serif;
+$body: "Lato", sans-serif;
+
+$ease: all 0.3s ease;
+
+body {
+  background: $pink;
+}
+.container {
+  min-width: 750px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  background: $white;
+  width: 280px;
+  height: 350px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 2px 5px 8px rgba($black, 0.2);
+  overflow: hidden;
+  transition: $ease;
+  &:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 5px 8px 10px rgba($black, 0.2);
+  }
+}
+
+h1 {
+  color: $green;
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 0.75em;
+  margin: 50px 0 10px 0;
+}
+
+p {
+  font-size: 0.75em;
+  line-height: 1.4em;
+  font-family: $body;
+  color: $green;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 93px 25px 0 25px;
+}
+.dark {
+  background: $pink;
+}
+.seattle {
+  opacity: 0.7;
+  height: 100%;
+  margin-left: -120%;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  color: $white;
+  -webkit-text-stroke: 1px $green;
+}
+.accent-line {
+  height: 7px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+.green {
+  background: $green;
+  position: absolute;
+  top: 51%;
+}
+.pink {
+  background: $pink;
+}
+.pink2 {
+  background: #ddc1b5;
+}
+.pink3 {
+  background: #c4aba1;
+}
+
+.btn {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  padding: 14px;
+  border-radius: 5px;
+  outline: 0;
+  font-family: $body;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: $white;
+  border: 0;
+  color: $green;
+  box-shadow: 2px 2px 5px rgba($black, 0.5);
+  transition: $ease;
+  &:hover {
+    background: $green;
+    color: $white;
+    cursor: pointer;
+    transition: $ease;
+    transform: scale(1.04);
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-family: $body;
+  p {
+    color: $green;
+    letter-spacing: 2px;
+  }
+  a {
+    color: $black;
+    text-decoration: none;
+    transition: $ease;
+    padding: 3px;
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+}

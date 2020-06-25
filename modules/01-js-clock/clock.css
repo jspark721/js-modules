@@ -8,13 +8,9 @@
 
 #time {
   font-size: 4em;
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: "Anonymous Pro", sans-serif;
   font-weight: 500;
   letter-spacing: 4px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   padding: 30px;
-}
-
-#time .sec {
-
 }
