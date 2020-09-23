@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap");
+
+:root {
+  --main: #576ca8;
+  --green: #4e937a;
+  --darkblue: #1b264f;
+  --black: #252629;
+  --white: #f5f3f5;
+}
+
+body {
+  background: var(--main);
+  font-family: "Lobster", serif;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: "Abril Fatface", sans-serif;
+  margin-bottom: 20px;
+  border: 2px solid var(--black);
+  background: var(--white);
+  font-size: inherit;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+button:hover {
+  background: var(--green);
+  transition: background-color 0.2s ease;
+}
+
+h1 {
+  font-size: 3em;
+  position: relative;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: var(--white);
+  bottom: 4px;
+  z-index: -1;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.joke {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble {
+  display: inline-block;
+  position: relative;
+  padding: 30px 40px;
+  border-radius: 15px;
+  font-size: 1.5em;
+  border: 2px solid var(--black);
+  margin-bottom: 50px;
+  background: var(--white);
+}
+#punchline {
+  margin-bottom: 40px;
+  margin-top: -40px;
+  margin-left: 40px;
+  color: var(--white);
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 2em;
+  position: relative;
+}

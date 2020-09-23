@@ -1,2 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:400,800|Lato:300,400&display=swap");
+
 body {
-  background: #659bb1; }
+  background: #659bb1;
+  font-family: "Lato", sans-serif;
+}
